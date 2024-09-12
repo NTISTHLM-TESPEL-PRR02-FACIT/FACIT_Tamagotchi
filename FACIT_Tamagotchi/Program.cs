@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 Console.WriteLine("Welcome to Tamagotchi!");
 
 Tamagotchi myTama = new Tamagotchi();
@@ -39,7 +38,8 @@ while (myTama.GetAlive() == true)
     Console.WriteLine("Doing nothing...");
   }
   myTama.Tick();
-  
+  Console.WriteLine("Press Enter to continue");
+  Console.ReadLine();
 }
 
 Console.WriteLine($"OH NO! {myTama.name} is dead!");

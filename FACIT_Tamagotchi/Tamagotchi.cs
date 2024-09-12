@@ -7,12 +7,10 @@ public class Tamagotchi
   private int boredom;
   private List<string> words = new List<string>() {"Hewwo"};
   private bool isAlive;
-  private Random generator;
   public string name;
 
   public Tamagotchi()
   {
-    generator = new Random();
     isAlive = true;
   }
 
@@ -28,7 +26,7 @@ public class Tamagotchi
 
   public void Hi()
   {
-    int wordNum = generator.Next(words.Count);
+    int wordNum = Random.Shared.Next(words.Count);
     Console.WriteLine($" [{name}] says: {words[wordNum]}");
     ReduceBoredom();
   }
