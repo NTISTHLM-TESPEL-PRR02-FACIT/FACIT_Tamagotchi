@@ -7,6 +7,8 @@ Console.WriteLine("Please choose a name for your Tamagotchi!");
 myTama.name = Console.ReadLine();
 
 Console.WriteLine($"Great! {myTama.name} is a beautiful name!");
+Console.WriteLine("Press any key to continue");
+Console.ReadKey();
 
 while (myTama.GetAlive() == true)
 {
